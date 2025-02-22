@@ -16,3 +16,5 @@ const fibRecursive = (num) => {
     arr.push(arr[num-2] + arr[num-3]);
     return arr;
 }
+
+console.log(fibRecursive(8))
