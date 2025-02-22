@@ -7,12 +7,12 @@
  */
 const fibRecursive = (num) => {
     //Base cases:
-    if (n == 1) return [0] 
-    if (n == 2) return [0,1]
-    if (n <= 0) return []
+    if (num == 1) return [0] 
+    if (num == 2) return [0,1]
+    if (num <= 0) return []
 
     //recursive case:
-    let arr = fibRecursive(n - 1) //create the array calling fibRecursive
-    arr.push(arr[n-2] + arr[n-3]);
+    let arr = fibRecursive(num - 1) //create the array calling fibRecursive
+    arr.push(arr[num-2] + arr[num-3]);
     return arr;
 }
